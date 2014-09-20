@@ -1,0 +1,25 @@
+<snippet>
+    <content><![CDATA[
+(function (root, factory) {
+
+    if (typeof define === 'function' && define.amd) {
+        define(factory)
+    } else if (typeof module === 'object'
+                && typeof module.exports === 'object') {
+        module.exports = factory(require);
+    } else {
+        root.${2:export} = factory();
+    }
+
+}(this, function (require) {
+
+    "use strict";
+
+    return ${2:export};
+
+}));
+]]></content>
+    <tabTrigger>factory</tabTrigger>
+    <scope>source.js</scope>
+    <description>CommonJS/AMD Factory</description>
+</snippet>

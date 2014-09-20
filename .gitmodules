@@ -1,0 +1,12 @@
+[submodule "tmux"]
+	path = tmux
+	url = git@github.com:ambidexterich/dot-tmux.git
+[submodule "screen"]
+	path = screen
+	url = git@github.com:ambidexterich/dot-screen.git
+[submodule "bash"]
+	path = bash
+	url = git@github.com:ambidexterich/dot-bash.git
+[submodule "vim"]
+	path = vim
+	url = git@github.com:ambidexterich/dot-vim.git

@@ -1,0 +1,27 @@
+<snippet>
+    <content><![CDATA[
+(function (root, factory) {
+
+    if (typeof define === 'function' && define.amd) {
+        define(['require', './${1:module}'], factory);
+    } else if (typeof module === 'object'
+                && typeof module.exports === 'object') {
+        module.exports = factory(require);
+    } else {
+        root.${2:export} = factory();
+    }
+
+}(this, function (require) {
+
+    "use strict";
+
+    var ${1:module} = require('./${1:module}');
+
+    return ${2:export};
+
+}));
+]]></content>
+    <tabTrigger>factory-dep</tabTrigger>
+    <scope>source.js</scope>
+    <description>CommonJS/AMD Factory with Dependencies</description>
+</snippet>

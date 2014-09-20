@@ -1,0 +1,35 @@
+<snippet>
+	<content><![CDATA[<!doctype html>
+<html lang="en">
+	<head>
+
+		<meta charset="utf-8">
+
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+		<title>${1:Untitled...}</title>
+
+		<meta name="description" content="">
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+
+
+	</head>
+
+	<body>
+
+		<header>
+			$0
+		</header>
+		<div role="main">
+
+		</div>
+		<footer>
+
+		</footer>
+
+	</body>
+</html>]]></content>
+	<tabTrigger>html5</tabTrigger>
+	<scope>text.html</scope>
+	<description>HTML5 Starter</description>
+</snippet>
